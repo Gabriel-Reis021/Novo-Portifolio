@@ -8,14 +8,16 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:100px;
+    gap:100px ;
     align-items: center;
+
 
 }
 .footer-texto{
     font-size: 1.5rem;
     line-height: 1.33;
     color: #cccccc;
+
 }
 .footer-contato li{
     font-weight: bold;
@@ -27,7 +29,37 @@
 }
 .footer-contato .email::before{
    
-   
+   content: "";
+   display: block;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background: url(/img/e-mail\.png) no-repeat center center;
+
+   left: -70px;
+   position: absolute;
+
+}
+.footer-contato .instagram::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(/img/instagram.png) no-repeat center center;
+    border-radius: 50%;
+    position: absolute;
+    left: -70px;
+
+}
+.footer-contato .contato::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(/img/telefone.png) no-repeat center center;
+    border-radius: 50%;
+    position: absolute;
+    left: -70px;
 
 }
 
@@ -38,6 +70,7 @@
     grid-column: 1/-1;
     font-size: 1.125rem;
     color: #8f8f8f;
+    text-align: center;
 }
 
 @media(max-width:800px){
@@ -49,4 +82,13 @@
     .footer-contato li{
         font-size: 1.5rem;
     }
+    .footer-contato .email::before{
+        display: none;     
+     }
+     .footer-contato .instagram::before{
+         display: none;     
+     }
+     .footer-contato .contato::before{
+         display: none;  
+     }
 }
