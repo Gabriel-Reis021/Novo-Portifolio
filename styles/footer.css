@@ -22,6 +22,12 @@
     font-size: 2.225rem;
     color: #ffffff;
     margin-bottom: 30px;
+    position: relative;
+
+}
+.footer-contato .email::before{
+   
+   
 
 }
 

@@ -1,5 +1,5 @@
 .formacao{
-    background: #141414;
+    background: linear-gradient(#141414 65%, #080808);
     color: #ffffff;
 }
 .formacao-container{
@@ -75,7 +75,7 @@
     display: block;
     width: 4px;
     height: 20px;
-    background: linear-gradient(#b6f829, #67dd0a);
+    background: linear-gradient(#8a29f8, #5e0add);
     position: absolute;
     left: -24px;
 
@@ -103,7 +103,6 @@
     content: "";
     width: 24px;
     height: 24px;
-    background: url("/img/cursos.svg") no-repeat center center;
     position: absolute;
     left: -36px;
     top: -4px;
