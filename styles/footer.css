@@ -27,7 +27,8 @@
     position: relative;
 
 }
-.footer-contato .icon-email{
+.footer-contato .icon-sociais{
+
     width: 25px;
     height: 25px;
     background: linear-gradient(45deg,#8a29f8,#5e0add);
@@ -37,31 +38,9 @@
     position: absolute;
     left: -60px;
     top: 4px;
-    
-}
-.footer-container .icon-phone{
-    width: 25px;
-    height: 25px;
-    background: linear-gradient(45deg,#8a29f8,#5e0add);
-    border-radius: 50%;
-    border: solid #903cf0;
-    padding: 6px;
-    position: absolute;
-    left: -60px;
-    top: 4px;
+
 }
 
-.footer-container .icon-insta{
-    width: 25px;
-    height: 25px;
-    background: linear-gradient(45deg,#8a29f8,#5e0add);
-    border-radius: 50%;
-    border: solid #903cf0;
-    padding: 6px;
-    position: absolute;
-    left: -60px;
-    top: 4px;
-}
 
 .footer-contato li a{
     color: #ffffff;
@@ -114,6 +93,9 @@
 
     .footer-container{
         grid-template-columns: 1fr;
+    }
+    .footer-contato .icon-sociais{
+        display: none;
     }
 
 
