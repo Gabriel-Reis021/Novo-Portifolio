@@ -19,6 +19,7 @@ html{
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -39,6 +40,19 @@ html{
 }
 .header-menu a:not(:hover){
     transition: ease-in-out 200ms;
+}
+
+.header-menu button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.dark-mode .header-menu button{
+    background-color: rgb(83, 189, 216);
 }
 @media (max-width: 800px){
     .header{

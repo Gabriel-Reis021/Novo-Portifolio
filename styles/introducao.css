@@ -7,6 +7,16 @@
     gap: 100px;
     align-items: center;
 }
+.introducao .dark-mode-img{
+    display: none;
+}
+.dark-mode .introducao .dark-mode-img{
+ 
+    display: block;
+}
+.dark-mode .introducao img{
+    display: none;
+}
 .introducao h1{
     font-size: 4.5rem;
     line-height: 1.125;

@@ -24,6 +24,9 @@
 
     color: #141414;
 }
+.dark-mode .experiencia-texto strong{
+    color:#8a29f8;
+}
 .empresa{
     display: grid;
     grid-template-columns: 1fr 1fr;
