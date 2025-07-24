@@ -89,6 +89,10 @@
     padding: 5px 10px;
 
 }
+.dark-mode, .empresa-habilidades li{
+    color: var(--text-color);
+} 
+
 .empresa  .link-projeto{
     grid-column: 2;
     text-align: start;
