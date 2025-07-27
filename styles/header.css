@@ -58,6 +58,17 @@ html{
     border:2px solid white;
 
 }
+
+.header-menu-mobile{
+    font-size: 3rem;
+    color: #141414;
+    cursor: pointer;
+    display: none;
+
+}
+.dark-mode .header-menu-mobile{
+    color: #f5f5f5;
+}
 @media (max-width: 800px){
     .header{
         flex-direction: column;
@@ -79,5 +90,27 @@ html{
     }
     .header-menu{
         gap: 30px;
+        flex-wrap: nowrap;
     }
+}
+@media (max-width: 570px){
+    .header nav{
+        width: 100%;
+
+    }
+    .header .header-menu{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      display: none;
+    }
+
+
+    .header .header-menu-mobile{
+        display: flex;
+       justify-self: flex-end;
+
+    }
+
 }
