@@ -29,11 +29,13 @@
         <img src="/img/foto-portifólio-clara.webp" alt="Gabriel" width="794" height="1123">
         <img src="/img/foto-portifólio-escura.webp" alt="Gabriel" width="794" height="1123" class="dark-mode-img">
         <div>
-            <h1> Desenvolvedor <br> Front End <br> & UI/UX</h1>
-            <p>Localizado no Rio de Janeiro 🏖️</p>
+            <!-- <h1> Desenvolvedor <br> Front End <br> & UI/UX</h1> -->
+            <h1><span id="digitando"></span></h1>
+            <p>Localizado no Rio de Janeiro 🏖️ </p>
+
         </div>
     </main>
-
+    
     <section class="experiencia" id="experiencia" aria-label="Expereciência">
         <h2 class="subtitulo">experiência</h2>
         <div>
@@ -178,6 +180,17 @@
         </div>
     </footer>
     <script src="/web/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const options = {
+            strings: ["Desenvolvedor Front End", "UI/UX Designer", "Programador Web"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: false
+        };
+
+        const typed = new Typed("#digitando", options);
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

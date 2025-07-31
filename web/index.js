@@ -23,22 +23,12 @@ botao.addEventListener('click', () => {
 const menuMobile = document.querySelector('.header-menu-mobile');
 const menu = document.querySelector('.header-menu');
 
-// adicionando evento de click no menu mobile para alternar a visibilidade do menu principal
-// e alterar o ícone do menu mobile
-
 menuMobile.addEventListener('click', () => {
-    menu.classList.toggle('active');
+  menu.classList.toggle('active');
 
-
-    if (menu.classList.contains('active') && window.innerWidth <= 570) {
-        menuMobile.innerHTML = '<ion-icon name="close-outline"></ion-icon>';
-        menu.style.display = 'flex';
-        menu.style.flexDirection = 'column';
-        
-    } else{
-        menuMobile.innerHTML = '<ion-icon name="reorder-three-outline"></ion-icon>';
-        menu.style.display = 'none';
-        menu.style.flexDirection = 'row';
-
-    }
+  if (menu.classList.contains('active')) {
+    menuMobile.innerHTML = '<ion-icon name="close-outline"></ion-icon>';
+  } else {
+    menuMobile.innerHTML = '<ion-icon name="reorder-three-outline"></ion-icon>';
+  }
 });
