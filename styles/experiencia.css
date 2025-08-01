@@ -138,25 +138,17 @@
         content: "";
         display: block;
         width: 100px;
-        height: 2px;
+        height: 5px;
         background-image: linear-gradient(to right, #8a29f8, #4b0082);
         position: absolute;
         z-index: 0;
         bottom:-10px;
+        transform: skew(-30deg);
+        left: 0;
         animation: fadeInA 2000ms normal backwards;
 
     }
-    .experiencia .subtitulo::before{
-        content: "";
-        display: block;
-        width: 275px;
-        height: 2px;
-        background-image: linear-gradient(to right, #8a29f8, #4b0082);
-        position: absolute;
-        z-index: -1;
-        bottom:3px;
-        animation: fadeInB 2000ms normal backwards;
-    }
+
 
     .dark-mode .experiencia .subtitulo{
         color: #f5f5f5;
@@ -166,11 +158,13 @@
        content: "";
        display: block;
        width: 100px;
-       height: 2px;
-       background: linear-gradient(#8a29f8, #5e0add);
+       height: 5px;
+       background: linear-gradient(to right, #8a29f8, #5e0add);
        position: absolute;
        z-index: 0;
        bottom:-10px;
+       transform: skew(-30deg);
+       left: 0;
        animation: fadeInA 2000ms normal backwards;
    }
    @keyframes fadeInA {
@@ -182,25 +176,7 @@
        }
    }
 
-    .dark-mode .experiencia .subtitulo::before{
-        content: "";
-        display: block;
-        width: 275px;
-        height: 2px;
-        background: linear-gradient(#8a29f8, #5e0add);
-        position: absolute;
-        z-index: -1;
-        bottom:3px;
-        animation: fadeInB 2000ms normal backwards;
-    }
-       @keyframes fadeInB {
-       from {
-           width: 0;
-        }
-        to {
-            width:275px ;
-       }
-   }
+
     
 
     .experiencia-texto{
