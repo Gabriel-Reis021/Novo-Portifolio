@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/style.min.css">
+    <link rel="stylesheet" href="/styles/habilidades.css">
     <link rel="shortcut icon" href="/img/compras.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +66,7 @@
 
             </div>
             <div class="link-projeto">
-                <a href="">exemplo/bikecraft</a>
+                <a href="https://projeto-bikecraft.vercel.app/" target="_blank" rel="noopener">Ir para o site</a>
             </div>
 
         </div>
@@ -90,7 +92,7 @@
 
             </div>
             <div class="link-projeto">
-                <a href="">exemplo/shura-store</a>
+                <a href="https://shura-store.vercel.app/" target="_blank" rel="noopener">Ir para o site</a>
             </div>
 
         </div>
@@ -116,11 +118,71 @@
 
             </div>
             <div class="link-projeto">
-                <a href="">exemplo/pizzaria</a>
+                 <a href="http://projeto-pizzaria.xo.je/" target="_blank" rel="noopener">Ir para o site</a>
             </div>
         </div>
+    </div>
+</section>
+
+
+<section class="habilidades" id="habilidades" aria-label="Habilidades" role="region" aria-roledescription="carousel">
+  <div class="habilidades-container">
+    <h2>Hard skills</h2>
+  </div>
+
+  <div class="carousel-wrap">
+    <!-- Sombras laterais -->
+    <div class="carousel-fade left"></div>
+    <div class="carousel-fade right"></div>
+
+    <div class="habilidades-slides" id="habilidades-track">
+      <div class="card-habilidades" id="html">
+        <div class="habilidades-img">
+            <img src="/img/html-1.svg" alt="" width="100">
         </div>
-    </section>
+        <span>HTML</span>
+      </div>
+      <div class="card-habilidades" id="css">
+        <div class="habilidades-img">
+            <img src="/img/css-3.svg" alt="" width="100">
+        </div>
+        <span>CSS</span>
+      </div>
+      <div class="card-habilidades" id="javascript">
+        <div class="habilidades-img">
+            <img src="/img/javascript-r (1).svg" alt="" width="100">
+        </div>
+        <span>Javascript</span>
+      </div>
+      <div class="card-habilidades" id="react">
+        <div class="habilidades-img">
+           <img src="/img/react-2.svg" alt="" width="100">
+        </div>
+        <span>React</span>
+      </div>
+      <div class="card-habilidades" id="python">
+        <div class="habilidades-img">
+          <img src="/img/python-5.svg" alt="" width="100">
+        </div>
+        <span>Python</span>
+      </div>
+      <div class="card-habilidades" id="mysql">
+        <div class="habilidades-img">
+          <img src="/img/mysql-logo-pure.svg" alt="" width="100">
+        </div>
+        <span>MySQL</span>
+      </div>
+      <div class="card-habilidades" id="php">
+        <div class="habilidades-img">
+          <img src="/img/php-4.svg" alt="" width="100">
+        </div>
+        <span>PHP</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <section class="formacao" id="formacao" aria-label="Formação">
         <div class="formacao-container">
@@ -128,7 +190,7 @@
 
             <div>
                 <p class="formacao-texto">
-                    Minha mais recente experiencia acadêmica foi a <strong>graduação</strong> 🎓 que fiz no rio de janeiro em <strong>Análise e Deseinvolvimento de Sistemas</strong>.
+                    Minha mais recente experiencia acadêmica foi a <strong>graduação</strong> 🎓 que fiz no rio de janeiro em <strong>Análise e Desenvolvimento de Sistemas</strong>.
                     além disso me mantenho sempre atualizado com cursos intensivos online.
                 </p>
             </div>
@@ -160,10 +222,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="habilidades" id="habilidades" aria-label="Habilidades">
-        
-
     </section>
 
 
@@ -202,6 +260,7 @@
         </div>
     </footer>
     <script src="/web/index.js"></script>
+    <script src="/web/carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         const options = {

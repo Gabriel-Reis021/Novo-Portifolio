@@ -1,0 +1,124 @@
+
+.habilidades-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.habilidades {
+  padding: 2rem 1rem;
+}
+
+.habilidades-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.carousel-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Sombras laterais */
+.carousel-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.carousel-fade.left {
+  left: 0;
+  background: linear-gradient(to right, white 0%, transparent 100%);
+}
+
+.carousel-fade.right {
+  right: 0;
+  background: linear-gradient(to left, white 0%, transparent 100%);
+}
+
+.habilidades-slides {
+  display: flex;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 1;
+}
+
+.card-habilidades {
+  flex: 0 0 200px;
+  background: var(--card-bg, #fff);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.25s ease;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.card-habilidades:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 14px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.card-habilidades .habilidades-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.card-habilidades img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-button {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: opacity 0.3s ease;
+  z-index: 200;
+}
+
+
+
+@media (max-width: 900px) {
+  .card-habilidades {
+    flex: 0 0 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-wrap {
+    gap: 0.5rem;
+  }
+
+  .card-habilidades {
+    flex: 0 0 140px;
+  }
+
+
+}
