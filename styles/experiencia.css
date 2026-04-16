@@ -125,24 +125,41 @@
     text-decoration: none;
     width: fit-content;
     position: relative;
-    
-}
-.empresa .link-projeto a::after{
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0px;
-    background: #8a29f8;
-    margin-top: 4px;
-    transition: 0.3s;
-    position: absolute;
 
+}
+
+.empresa .link-projeto a::after{
+  
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    height: 2px;
+    width: 100%;
+    background: #8a29f8;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+
+    /*display:block;
+    margin-top: 4px;
+    transition: 0.3s;*/
+   
 
 }
 .empresa .link-projeto a:hover:after{
-    width: 100%;
+    transform: scaleX(1);
+    transform-origin: left;
+    /* width: 100%; */
     
     
+    
+}
+
+.empresa .link-projeto a:not(:hover)::after{
+    transform-origin: right;
 }
 
 @media (max-width:800px){
