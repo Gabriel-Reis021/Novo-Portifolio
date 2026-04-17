@@ -8,6 +8,7 @@
     const AUTOPLAY_INTERVAL = 1000; // tempo em ms
 
     function getItemWidth() {
+        if(!items.length) return 0;
         return items[0].getBoundingClientRect().width + (parseFloat(getComputedStyle(track).gap) || 0);
     }
 
@@ -49,4 +50,11 @@
     track.style.transition = 'transform 300ms ease';
     update();
     startAutoplay();
+
+    //ajuste responsivo
+    window.addEventListener("resize", ()=>{
+        const maxIndex = Math.max(0, items.length - visibleCount());
+        if(index > maxIndex) index = maxIndex;
+        update();
+    })
 })();
